@@ -30,14 +30,11 @@ jobs:
           bundle install
           npm install
           yarn install
-
-      - name: Build frontend assets
-        run: yarn build
-        
+          
       - name: Build site for production
         env:
           BRIDGETOWN_ENV: production
-        run: bundle exec bridgetown build
+        run: bundle exec bridgetown deploy
 
       - name: Deploy to S3
         env:
