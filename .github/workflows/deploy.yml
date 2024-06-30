@@ -20,16 +20,17 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-          
+
+      - name: Install Yarn
+        run: npm install -g yarn
+      
       - name: Install dependencies
         run: |
           gem install bundler
           bundle install
           npm install
+          yarn install
 
-      - name: Build frontend assets
-        run: bin/bridgetown frontend:build
-        
       - name: Build site for production
         env:
           BRIDGETOWN_ENV: production
