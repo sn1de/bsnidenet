@@ -16,11 +16,20 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          
       - name: Install dependencies
         run: |
           gem install bundler
           bundle install
+          npm install
 
+      - name: Build frontend assets
+        run: bin/bridgetown frontend:build
+        
       - name: Build site for production
         env:
           BRIDGETOWN_ENV: production
