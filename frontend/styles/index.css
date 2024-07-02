@@ -8,7 +8,7 @@
 body {
   background: var(--body-background);
   color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Maven Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
   margin: 0 8px;
@@ -23,17 +23,18 @@ a {
 }
 
 h1 {
-  margin: 1rem 0 3rem;
+  margin: 1rem 0 0rem;
   text-align: center;
   font-weight: normal;
   font-size: 3.5rem;
   color: var(--heading-color);
   line-height: 1.2;
   font-family: 'Arsenal SC';
+  text-shadow: 2px 2px 2px #aaa;
 }
 
 h2 {
-  font-family: 'Arsenal SC';
+  font-family: 'Maven Pro', sans-serif;
 }
 
 body > header {
@@ -48,15 +49,16 @@ body > header img {
 }
 
 body > nav ul {
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: normal;
   font-family: 'Arsenal SC';
+  text-shadow: 1px 1px 1px #aaa;
 }
 
 body > nav a {
