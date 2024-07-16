@@ -3,6 +3,7 @@ layout: post
 title:  "Bradley Schneider Home Site"
 date:   2024-06-28 20:17:38 -0500
 categories: updates
+published: false
 ---
 
 This is the professional home site for software developer
