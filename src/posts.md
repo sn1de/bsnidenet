@@ -4,7 +4,7 @@ title: Posts
 ---
 
 <ul>
-  {% if collections.posts.resources | size == 0 %}
+  {% if collections.posts.resources.size == 0 %}
     <li>Coming Soon!</li>
   {% else %}
     {% for post in collections.posts.resources %}
